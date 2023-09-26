@@ -36,6 +36,8 @@ jobs:
         - name: Install chromedriver
           if: steps.cache-chromedriver.outputs.cache-hit != 'true'
           uses: nanasess/setup-chromedriver@v2
+        - name: Create folder
+          run: mkdir ${{ matrix.name }}
         - name: Testing ${{ matrix.name }}
           run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}/$(date +'%Y-%m-%d').json
         - name: Upload result
