@@ -8,13 +8,13 @@
       "name": "axe"
     },
     "testEnvironment": {
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/117.0.5938.88 Safari/537.36",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/117.0.5938.92 Safari/537.36",
       "windowWidth": 800,
       "windowHeight": 600,
       "orientationAngle": 0,
       "orientationType": "landscape-primary"
     },
-    "timestamp": "2023-09-26T11:06:20.468Z",
+    "timestamp": "2023-09-26T11:14:10.979Z",
     "url": "https://foryouandyourcustomers.com/",
     "toolOptions": {
       "reporter": "v1"
@@ -897,9 +897,61 @@
               }
             ],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-allowed-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role"
+              }
+            ],
+            "none": [
+              {
+                "id": "aria-unsupported-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute is supported"
+              }
+            ],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-allowed-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role"
+              }
+            ],
+            "none": [
+              {
+                "id": "aria-unsupported-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute is supported"
+              }
+            ],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -1224,7 +1276,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<a class=\"CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed\" role=\"button\" aria-expanded=\"false\" href=\"#\">",
+            "html": "<a class=\"CybotCookiebotDialogDetailBodyContentCookieProvider CybotCookiebotDialogCollapsed\" role=\"button\" aria-expanded=\"false\" href=\"#\">foryouandyourcustomers.com<div class=\"CybotCookiebotDialogDetailBodyContentCookieInfoCount CybotCookiebotDialogDetailBulkConsentCount\">1</div></a>",
             "target": [
               ".CybotCookiebotDialogDetailBodyContentCookieGroup:nth-child(4) > .CybotCookiebotDialogDetailBodyContentCookieProvider[role=\"button\"][href=\"#\"]"
             ]
@@ -1438,9 +1490,45 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-conditional-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-conditional-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -1761,9 +1849,45 @@
               }
             ],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "ARIA attribute is allowed"
+              }
+            ],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -2087,9 +2211,73 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute values are valid"
+              },
+              {
+                "id": "aria-errormessage",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+              },
+              {
+                "id": "aria-level",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-level values are valid"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute values are valid"
+              },
+              {
+                "id": "aria-errormessage",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-errormessage exists and references elements visible to screen readers that use a supported aria-errormessage technique"
+              },
+              {
+                "id": "aria-level",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-level values are valid"
+              }
+            ],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -2225,9 +2413,45 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute name is valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "ARIA attribute name is valid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -2388,7 +2612,7 @@
             ],
             "none": [],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -2463,9 +2687,45 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has inner text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has inner text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"base-button-link text-button-link disabled:text-gray-400 text-gray-900 text-base mr-3\">",
+            "target": [
+              ".base-button-link"
             ]
           },
           {
@@ -2483,7 +2743,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Aperspective<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Aperspective</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2501,7 +2761,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Services<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Services</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2519,7 +2779,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Cells<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Cells</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2537,7 +2797,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">People<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">People</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           }
         ]
@@ -2751,7 +3011,7 @@
                   "bgColor": "#ffffff",
                   "contrastRatio": 18.26,
                   "fontSize": "12.0pt (16px)",
-                  "fontWeight": "normal",
+                  "fontWeight": "bold",
                   "expectedContrastRatio": "4.5:1"
                 },
                 "relatedNodes": [],
@@ -2762,9 +3022,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"\">Menu</span>",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\: > span"
+              ".hover\\:\\!text-gray-900"
             ]
           },
           {
@@ -2787,7 +3047,132 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<div class=\"inline-flex flex-col\">Cells</div>",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > .inline-flex.flex-col"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#151515",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 18.26,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 18.26"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inline-flex flex-col\">Services</div>",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > .inline-flex.flex-col"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#151515",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 18.26,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 18.26"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/events/\">Events</a>",
+            "target": [
+              "a[href$=\"events/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#151515",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 18.26,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 18.26"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/careers/jobs/\">Jobs</a>",
+            "target": [
+              "a[href$=\"jobs/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#151515",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 18.26,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 18.26"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"base-button-link text-button-link disabled:text-gray-400 text-gray-900 text-base mr-3\">",
+            "target": [
+              ".base-button-link"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#151515",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 18.26,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has sufficient color contrast of 18.26"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -2812,7 +3197,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p>At <span class=\"font-bold text-teal-600\"><span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p>",
+            "html": "<p>At <span class=\"font-bold text-teal-600\">foryouandyourcustomers</span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p>",
             "target": [
               ".page-title > p"
             ]
@@ -2837,9 +3222,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
+            "html": "<span class=\"font-bold text-teal-600\">foryouandyourcustomers</span>",
             "target": [
-              ".text-teal-600 > .formatted"
+              ".text-teal-600"
             ]
           },
           {
@@ -2889,7 +3274,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Aperspective<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Aperspective</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2914,7 +3299,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Services<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Services</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2939,7 +3324,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Cells<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Cells</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2964,7 +3349,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">People<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">People</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -2987,34 +3372,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Inspired by art that abandoned perspective, <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span> shifts from an economic to an integral view of paid work.</p>",
+            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Inspired by art that abandoned perspective, foryouandyourcustomers shifts from an economic to an integral view of paid work.</p>",
             "target": [
               "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#151515",
-                  "bgColor": "#fafafa",
-                  "contrastRatio": 17.49,
-                  "fontSize": "27.0pt (36px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "3:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 17.49"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted"
             ]
           },
           {
@@ -3337,34 +3697,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span> will enhance your and our perspective about digital possibilities and art.</p>",
+            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at foryouandyourcustomers will enhance your and our perspective about digital possibilities and art.</p>",
             "target": [
               "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#151515",
-                  "bgColor": "#fafafa",
-                  "contrastRatio": 17.49,
-                  "fontSize": "27.0pt (36px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "3:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 17.49"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted"
             ]
           },
           {
@@ -8362,34 +8697,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div>© 2023 <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></div>",
+            "html": "<div>© 2023 foryouandyourcustomers</div>",
             "target": [
               ".sm\\:flex-row-reverse > div"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "fgColor": "#151515",
-                  "bgColor": "#ffffff",
-                  "contrastRatio": 18.26,
-                  "fontSize": "12.0pt (16px)",
-                  "fontWeight": "normal",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [],
-                "impact": "serious",
-                "message": "Element has sufficient color contrast of 18.26"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "div > .formatted"
             ]
           }
         ]
@@ -8998,7 +9308,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -9162,7 +9472,7 @@
               }
             ],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -9428,7 +9738,7 @@
               }
             ],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -9877,6 +10187,84 @@
             "html": "<a href=\"https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/\" rel=\"noopener nofollow\" target=\"_blank\" aria-label=\"logo - * UNKNOWN RESOURCE *\">Powered by <span>Cookiebot by Usercentrics</span></a>",
             "target": [
               "#CybotCookiebotDialogPoweredByText > a[rel=\"noopener nofollow\"][aria-label=\"logo - * UNKNOWN RESOURCE *\"][target=\"_blank\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
+            "target": [
+              ".hover\\:\\!text-gray-900"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/events/\">Events</a>",
+            "target": [
+              "a[href$=\"events/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has text that is visible to screen readers"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text"
+              }
+            ],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/careers/jobs/\">Jobs</a>",
+            "target": [
+              "a[href$=\"jobs/\"]"
             ]
           },
           {
@@ -15297,6 +15685,24 @@
               }
             ],
             "impact": null,
+            "html": "<ul class=\"flex items-center gap-x-6 tracking-wide\">",
+            "target": [
+              ".gap-x-6"
+            ]
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List element only has direct children that are allowed inside <li> elements"
+              }
+            ],
+            "impact": null,
             "html": "<ul class=\"mt-12 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-1 sm:gap-y-4 md:gap-x-6\">",
             "target": [
               ".sm\\:grid-cols-1"
@@ -15390,6 +15796,96 @@
         "help": "<li> elements must be contained in a <ul> or <ol>",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/listitem?application=webdriverjs",
         "nodes": [
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"flex\"><a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a></li>",
+            "target": [
+              ".gap-x-6 > .flex:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>",
+            "target": [
+              ".gap-x-6 > li:nth-child(2)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>",
+            "target": [
+              ".gap-x-6 > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"flex\"><a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/events/\">Events</a></li>",
+            "target": [
+              ".gap-x-6 > .flex:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "listitem",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "List item has a <ul>, <ol> or role=\"list\" parent element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"flex\"><a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/careers/jobs/\">Jobs</a></li>",
+            "target": [
+              ".flex:nth-child(5)"
+            ]
+          },
           {
             "any": [
               {
@@ -19249,9 +19745,45 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "no-focusable-content",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have focusable descendants"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"base-button-link text-button-link disabled:text-gray-400 text-gray-900 text-base mr-3\">",
+            "target": [
+              ".base-button-link"
             ]
           },
           {
@@ -19323,7 +19855,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Aperspective<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Aperspective</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -19341,7 +19873,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Services<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Services</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -19359,7 +19891,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Cells<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Cells</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -19377,7 +19909,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">People<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">People</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -20111,9 +20643,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\"mb-4\">",
+            "html": "<ul class=\"flex items-center gap-x-6 tracking-wide\">",
             "target": [
-              "nav > .mb-4"
+              ".gap-x-6"
             ]
           },
           {
@@ -20131,9 +20663,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div data-headlessui-state=\"\">",
+            "html": "<li class=\"flex\"><a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a></li>",
             "target": [
-              "div[data-headlessui-state=\"\"]"
+              ".gap-x-6 > .flex:nth-child(1)"
             ]
           },
           {
@@ -20151,9 +20683,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<button class=\"flex items-center gap-x-4\" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\" id=\"headlessui-popover-button-:r0:\">",
+            "html": "<a aria-current=\"page\" class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors font-bold hover:!text-gray-900\" href=\"/\">Home</a>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\:"
+              ".hover\\:\\!text-gray-900"
             ]
           },
           {
@@ -20171,9 +20703,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 17\"><path stroke=\"currentColor\" d=\"M0 1L16 1\"></path><path stroke=\"currentColor\" d=\"M0 6.5L16 6.5\"></path><path stroke=\"currentColor\" d=\"M0 12L16 12\"></path></svg>",
+            "html": "<li>",
             "target": [
-              "svg[viewBox=\"0 0 16 17\"]"
+              ".gap-x-6 > li:nth-child(2)"
             ]
           },
           {
@@ -20191,9 +20723,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<path stroke=\"currentColor\" d=\"M0 1L16 1\"></path>",
+            "html": "<div class=\"\" data-headlessui-state=\"\">",
             "target": [
-              "path[d=\"M0 1L16 1\"]"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -20211,9 +20743,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<path stroke=\"currentColor\" d=\"M0 6.5L16 6.5\"></path>",
+            "html": "<div class=\"relative z-10\">",
             "target": [
-              "path[d=\"M0 6.5L16 6.5\"]"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative"
             ]
           },
           {
@@ -20231,9 +20763,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<path stroke=\"currentColor\" d=\"M0 12L16 12\"></path>",
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
             "target": [
-              "path[d=\"M0 12L16 12\"]"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
             ]
           },
           {
@@ -20251,9 +20783,429 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"\">Menu</span>",
+            "html": "<div class=\"inline-flex flex-col\">Cells</div>",
             "target": [
-              "#headlessui-popover-button-\\:r0\\: > span"
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > .inline-flex.flex-col"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path></svg>",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > svg[width=\"16\"][height=\"16\"][fill=\"none\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path>",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > svg[width=\"16\"][height=\"16\"][fill=\"none\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"block h-px w-full bg-transparent\"></span>",
+            "target": [
+              "li:nth-child(2) > div[data-headlessui-state=\"\"] > .z-10.relative > .w-full.bg-transparent.block"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li>",
+            "target": [
+              ".gap-x-6 > li:nth-child(3)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"relative z-10\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"mb-4 flex items-center gap-x-2 hover:text-teal-600 transition-colors \" type=\"button\" aria-expanded=\"false\" data-headlessui-state=\"\">",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"inline-flex flex-col\">Services</div>",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > .inline-flex.flex-col"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path></svg>",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > svg[width=\"16\"][height=\"16\"][fill=\"none\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path>",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .gap-x-2[type=\"button\"][data-headlessui-state=\"\"] > svg[width=\"16\"][height=\"16\"][fill=\"none\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<span class=\"block h-px w-full bg-transparent\"></span>",
+            "target": [
+              "li:nth-child(3) > div[data-headlessui-state=\"\"] > .z-10.relative > .w-full.bg-transparent.block"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"flex\"><a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/events/\">Events</a></li>",
+            "target": [
+              ".gap-x-6 > .flex:nth-child(4)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/events/\">Events</a>",
+            "target": [
+              "a[href$=\"events/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<li class=\"flex\"><a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/careers/jobs/\">Jobs</a></li>",
+            "target": [
+              ".flex:nth-child(5)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<a class=\"mb-4 inline-flex flex-col items-center hover:text-teal-600 transition-colors\" href=\"/careers/jobs/\">Jobs</a>",
+            "target": [
+              "a[href$=\"jobs/\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div class=\"flex gap-6\">",
+            "target": [
+              ".gap-6"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<div>",
+            "target": [
+              ".gap-6 > div:nth-child(1)"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<button class=\"base-button-link text-button-link disabled:text-gray-400 text-gray-900 text-base mr-3\">",
+            "target": [
+              ".base-button-link"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 16\"><circle cx=\"6.5\" cy=\"5.5\" r=\"5\" stroke=\"currentColor\"></circle><path stroke=\"currentColor\" stroke-linecap=\"square\" d=\"M14 15l-3-4\"></path></svg>",
+            "target": [
+              ".base-button-link > svg[width=\"16\"][height=\"16\"][fill=\"none\"]"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<circle cx=\"6.5\" cy=\"5.5\" r=\"5\" stroke=\"currentColor\"></circle>",
+            "target": [
+              "circle"
+            ]
+          },
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "All page content is contained by landmarks"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": null,
+            "html": "<path stroke=\"currentColor\" stroke-linecap=\"square\" d=\"M14 15l-3-4\"></path>",
+            "target": [
+              "path[stroke-linecap=\"square\"]"
             ]
           },
           {
@@ -20273,7 +21225,7 @@
             "impact": null,
             "html": "<div class=\"relative\">",
             "target": [
-              "nav > .relative"
+              ".gap-6 > .relative"
             ]
           },
           {
@@ -20333,7 +21285,7 @@
             "impact": null,
             "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path></svg>",
             "target": [
-              ".right-0 > svg[viewBox=\"0 0 16 16\"][width=\"16\"][height=\"16\"]"
+              ".right-0 > svg[width=\"16\"][height=\"16\"][fill=\"none\"]"
             ]
           },
           {
@@ -20353,7 +21305,7 @@
             "impact": null,
             "html": "<path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path>",
             "target": [
-              ".right-0 > svg[viewBox=\"0 0 16 16\"][width=\"16\"][height=\"16\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
+              ".right-0 > svg[width=\"16\"][height=\"16\"][fill=\"none\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
             ]
           },
           {
@@ -20391,7 +21343,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
@@ -20531,7 +21483,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div class=\" responsive-width page-title\"><p>At <span class=\"font-bold text-teal-600\"><span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p></div>",
+            "html": "<div class=\" responsive-width page-title\"><p>At <span class=\"font-bold text-teal-600\">foryouandyourcustomers</span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p></div>",
             "target": [
               ".page-title"
             ]
@@ -20551,7 +21503,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p>At <span class=\"font-bold text-teal-600\"><span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p>",
+            "html": "<p>At <span class=\"font-bold text-teal-600\">foryouandyourcustomers</span>, we support businesses with expertise in all matters of <strong>digital change.</strong></p>",
             "target": [
               ".page-title > p"
             ]
@@ -20571,149 +21523,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<span class=\"font-bold text-teal-600\"><span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></span>",
+            "html": "<span class=\"font-bold text-teal-600\">foryouandyourcustomers</span>",
             "target": [
               ".text-teal-600"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              ".text-teal-600 > .formatted"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(1)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(2)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(5)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              ".text-teal-600 > .formatted > wbr:nth-child(6)"
             ]
           },
           {
@@ -20833,7 +21645,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Aperspective<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Aperspective</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(1) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -20893,7 +21705,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Services<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Services</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(2) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -20953,7 +21765,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">Cells<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">Cells</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(3) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -21013,7 +21825,7 @@
             "impact": null,
             "html": "<button class=\"mb-4 hover:font-bold inline-flex flex-col items-center \">People<span class=\"pointer-events-none invisible h-0 select-none overflow-hidden font-bold\">People</span></button>",
             "target": [
-              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.inline-flex.mb-4"
+              ".text-sm.flex.flex-col:nth-child(4) > .hover\\:font-bold.mb-4.inline-flex"
             ]
           },
           {
@@ -21131,7 +21943,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div>",
+            "html": "<div><h2 class=\"text-xs text-gray-600 sm:text-sm\">Aperspective</h2><p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Inspired by art that abandoned perspective, foryouandyourcustomers shifts from an economic to an integral view of paid work.</p></div>",
             "target": [
               "#aperspective > div"
             ]
@@ -21171,149 +21983,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Inspired by art that abandoned perspective, <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span> shifts from an economic to an integral view of paid work.</p>",
+            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Inspired by art that abandoned perspective, foryouandyourcustomers shifts from an economic to an integral view of paid work.</p>",
             "target": [
               "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(1)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(2)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(5)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#aperspective > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(6)"
             ]
           },
           {
@@ -22211,7 +22883,7 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div><h2 class=\"text-xs text-gray-600 sm:text-sm\">Cells</h2><p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span> will enhance your and our perspective about digital possibilities and art.</p></div>",
+            "html": "<div><h2 class=\"text-xs text-gray-600 sm:text-sm\">Cells</h2><p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at foryouandyourcustomers will enhance your and our perspective about digital possibilities and art.</p></div>",
             "target": [
               "#cells > div"
             ]
@@ -22251,149 +22923,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span> will enhance your and our perspective about digital possibilities and art.</p>",
+            "html": "<p class=\"mt-2 text-2xl sm:mt-4 sm:text-4xl\">Meeting at foryouandyourcustomers will enhance your and our perspective about digital possibilities and art.</p>",
             "target": [
               "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(1)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(2)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(5)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "#cells > div > .text-2xl.sm\\:mt-4.sm\\:text-4xl > .formatted > wbr:nth-child(6)"
             ]
           },
           {
@@ -23753,7 +24285,7 @@
             "impact": null,
             "html": "<div class=\"group relative transition-colors hover:text-teal-600\">",
             "target": [
-              ".hover\\:text-teal-600"
+              ".relative.hover\\:text-teal-600.transition-colors"
             ]
           },
           {
@@ -23793,7 +24325,7 @@
             "impact": null,
             "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"none\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path></svg>",
             "target": [
-              ".right-4 > svg[viewBox=\"0 0 16 16\"][width=\"16\"][height=\"16\"]"
+              ".right-4 > svg[width=\"16\"][height=\"16\"][fill=\"none\"]"
             ]
           },
           {
@@ -23813,7 +24345,7 @@
             "impact": null,
             "html": "<path fill=\"currentColor\" d=\"M3 6l5 5 5-5H3z\"></path>",
             "target": [
-              ".right-4 > svg[viewBox=\"0 0 16 16\"][width=\"16\"][height=\"16\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
+              ".right-4 > svg[width=\"16\"][height=\"16\"][fill=\"none\"] > path[fill=\"currentColor\"][d=\"M3 6l5 5 5-5H3z\"]"
             ]
           },
           {
@@ -34611,149 +35143,9 @@
             "all": [],
             "none": [],
             "impact": null,
-            "html": "<div>© 2023 <span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span></div>",
+            "html": "<div>© 2023 foryouandyourcustomers</div>",
             "target": [
               ".sm\\:flex-row-reverse > div"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<span class=\"formatted\">for<wbr>you<wbr>and<wbr>your<wbr>cus<wbr>to<wbr>mers</span>",
-            "target": [
-              "div > .formatted"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(1)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(2)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(3)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(4)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(5)"
-            ]
-          },
-          {
-            "any": [
-              {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
-                "relatedNodes": [],
-                "impact": "moderate",
-                "message": "All page content is contained by landmarks"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": null,
-            "html": "<wbr>",
-            "target": [
-              "div > .formatted > wbr:nth-child(6)"
             ]
           },
           {
@@ -34825,7 +35217,7 @@
               }
             ],
             "impact": null,
-            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width: 77px;\">",
+            "html": "<select name=\"locale-selector\" id=\"locale-selector\" class=\"cursor-pointer appearance-none bg-transparent pr-6 transition-colors group-hover:text-teal-600\" style=\"width:77px\">",
             "target": [
               "#locale-selector"
             ]
