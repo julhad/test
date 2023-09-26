@@ -1,0 +1,12 @@
+{
+    "include": [
+        {
+            "name": "foryouandyourcustomers",
+            "url": "https://foryouandyourcustomers.com"
+        },
+        {
+            "name": "ORF",
+            "url": "https://orf.at"
+        }
+    ]
+}
