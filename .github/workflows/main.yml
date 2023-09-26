@@ -27,10 +27,15 @@ jobs:
             node-version: 18
         - name: Install axe-core/cli
           run: npm i @axe-core/cli -g
+        - name: Cache chromedriver
+          id: cache-chromedriver
+          uses: actions/cache@v3
+          with:
+            path: /usr/local/bin/chromedriver
+            key: ${{ runner.os }}-chromedriver
         - name: Install chromedriver
+          if: steps.cache-chromedriver.outputs.cache-hit != 'true'
           uses: nanasess/setup-chromedriver@v2
-        - name: Create output directory
-          run: mkdir -p reports/${{ matrix.name }}
         - name: Testing ${{ matrix.name }}
           id: test
           #run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --dir reports/${{ matrix.name }} --save ${{ matrix.name }}-report-$(date +'%Y-%m-%dT%H:%M:%S').json
@@ -63,4 +68,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: [read]
     steps:
-      - run: echo "${{ fromJson(needs.read.outputs.result) }}"
+      - run: echo ${{ fromJson(needs.read.outputs.result) }}
