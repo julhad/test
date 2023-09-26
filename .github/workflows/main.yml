@@ -18,8 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix: ${{fromJson(needs.parse-websites.outputs.matrix)}}
-    outputs:
-      axe-result: ${{ steps.test.outputs.axe-result }}
     steps: 
         - name: Checkout repository
           uses: actions/checkout@v3
@@ -34,42 +32,23 @@ jobs:
           uses: actions/cache@v3
           with:
             path: /usr/local/bin/chromedriver
-            key: chromedriver-${{ runner.os }}
+            key: ${{ runner.os }}-chromedriver
         - name: Install chromedriver
           if: steps.cache-chromedriver.outputs.cache-hit != 'true'
           uses: nanasess/setup-chromedriver@v2
         - name: Testing ${{ matrix.name }}
-          id: test
-          run: |
-            axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}.json
-            echo "axe-result=$(jq -c . < ./${{ matrix.name }}.json)" >> $GITHUB_OUTPUT
-
-        ## Write for matrix outputs workaround 
-        - uses: cloudposse/github-action-matrix-outputs-write@main
-          id: out
+          run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}.json
+        - name: Upload result
+          uses: actions/upload-artifact@v3
           with:
-            matrix-step-name: ${{ github.job }}
-            matrix-key: ${{ matrix.name }}
-            outputs: |-
-              axe-result: '${{ steps.test.outputs.axe-result }}'
+            name: axe-result-${{ matrix.name }}.json
+            path: ${{ matrix.name }}.json
 
-  ## Read matrix outputs 
-  read:
+  save-results:
     runs-on: ubuntu-latest
     needs: [axe-core-cli]
     steps:
-      - uses: cloudposse/github-action-matrix-outputs-read@main
-        id: read
+      - name: Download results
+        uses: actions/download-artifact@v3
         with:
-          matrix-step-name: axe-core-cli
-
-    outputs:
-      result: "${{ steps.read.outputs.result }}"
-
-  ## Output matrix results
-  output:
-    runs-on: ubuntu-latest
-    needs: [read]
-    steps:
-      - name: Output
-        run: echo ${{ fromJson(needs.read.outputs.result).axe-result }}
+          path: results
