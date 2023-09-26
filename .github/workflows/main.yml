@@ -37,12 +37,12 @@ jobs:
           if: steps.cache-chromedriver.outputs.cache-hit != 'true'
           uses: nanasess/setup-chromedriver@v2
         - name: Testing ${{ matrix.name }}
-          run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}.json
+          run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}-$(date +'%Y-%m-%dT%H:%M:%S').json
         - name: Upload result
           uses: actions/upload-artifact@v3
           with:
-            name: axe-result-${{ matrix.name }}.json
-            path: ${{ matrix.name }}.json
+            name: ${{ matrix.name }}
+            path: ${{ matrix.name }}-*.json
 
   save-results:
     runs-on: ubuntu-latest
