@@ -51,7 +51,7 @@ jobs:
             matrix-step-name: ${{ github.job }}
             matrix-key: ${{ matrix.name }}
             outputs: |-
-              axe-result: ${{ steps.test.outputs.axe-result }}
+              axe-result: '${{ steps.test.outputs.axe-result }}'
 
   ## Read matrix outputs 
   read:
