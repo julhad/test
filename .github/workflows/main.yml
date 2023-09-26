@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix: ${{fromJson(needs.parse-websites.outputs.matrix)}}
+    outputs:
+      axe-result: ${{ steps.test.outputs.axe-result }}
     steps: 
         - name: Checkout repository
           uses: actions/checkout@v3
@@ -38,8 +40,9 @@ jobs:
           uses: nanasess/setup-chromedriver@v2
         - name: Testing ${{ matrix.name }}
           id: test
-          #run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --dir reports/${{ matrix.name }} --save ${{ matrix.name }}-report-$(date +'%Y-%m-%dT%H:%M:%S').json
-          run: echo "axe-result=$(axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver')" >> $GITHUB_OUTPUT
+          run: |
+            axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}.json
+            echo "axe-result=$(jq -c . < ./${{ matrix.name }}.json)" >> $GITHUB_OUTPUT
 
         ## Write for matrix outputs workaround 
         - uses: cloudposse/github-action-matrix-outputs-write@main
