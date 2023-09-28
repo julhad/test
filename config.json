@@ -1,0 +1,18 @@
+{
+  "include": [
+    {
+      "name": "foryouandyourcustomers",
+      "urls": [
+        "https://foryouandyourcustomers.com",
+        "https://foryouandyourcustomers.com/events",
+        "https://foryouandyourcustomers.com/cells/vienna"
+      ]
+    },
+    {
+      "name": "ORF",
+      "urls": [
+        "https://orf.at"
+      ]
+    }
+  ]
+}
