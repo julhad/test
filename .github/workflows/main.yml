@@ -2,61 +2,61 @@ on:
     workflow_dispatch:
 
 jobs:
-  parse-websites:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.website-matrix.outputs.matrix }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Set websites matrix
-        id: website-matrix
-        run: echo "matrix=$(jq -c . < ./websites.json)" >> $GITHUB_OUTPUT
-
-  axe-core-cli:
-    needs: parse-websites
-    runs-on: ubuntu-latest
-    strategy:
-      matrix: ${{fromJson(needs.parse-websites.outputs.matrix)}}
-    steps: 
+    parse-config:
+      runs-on: ubuntu-latest
+      outputs:
+        matrix: ${{ steps.config-matrix.outputs.matrix }}
+      steps:
         - name: Checkout repository
           uses: actions/checkout@v3
-        - name: Setup Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
-        - name: Install axe-core/cli
-          run: npm i @axe-core/cli -g
-        - name: Cache chromedriver
-          id: cache-chromedriver
-          uses: actions/cache@v3
-          with:
-            path: /usr/local/bin/chromedriver
-            key: ${{ runner.os }}-chromedriver
-        - name: Install chromedriver
-          if: steps.cache-chromedriver.outputs.cache-hit != 'true'
-          uses: nanasess/setup-chromedriver@v2
-        - name: Create folder
-          run: mkdir ${{ matrix.name }}
-        - name: Testing ${{ matrix.name }}
-          run: axe ${{ matrix.url }} --chromedriver-path='/usr/local/bin/chromedriver' --save ${{ matrix.name }}/$(date +'%Y-%m-%d').json
-        - name: Upload result
-          uses: actions/upload-artifact@v3
-          with:
-            name: ${{ matrix.name }}
-            path: ${{ matrix.name }}/*.json
+        - name: Parse config.json into matrix
+          id: config-matrix
+          run: echo "matrix=$(jq -c . < ./config.json)" >> $GITHUB_OUTPUT
 
-  publish-results:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    needs: [axe-core-cli]
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Download results
-        uses: actions/download-artifact@v3
-        with:
-          path: results
-      - name: Publish new results
-        uses: stefanzweifel/git-auto-commit-action@v4
+    axe:
+        needs: parse-config
+        runs-on: ubuntu-latest
+        strategy:
+            matrix: ${{fromJson(needs.parse-config.outputs.matrix)}}
+        steps: 
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+            - name: Install axe-core/cli
+              run: npm i @axe-core/cli -g
+            - name: Cache chromedriver
+              id: cache-chromedriver
+              uses: actions/cache@v3
+              with:
+                path: /usr/local/bin/chromedriver
+                key: ${{ runner.os }}-chromedriver
+            - name: Install chromedriver
+              if: steps.cache-chromedriver.outputs.cache-hit != 'true'
+              uses: nanasess/setup-chromedriver@v2
+            - name: Create folder
+              run: mkdir ${{ matrix.name }}
+            - name: Testing ${{ matrix.name }}
+              run: axe --stdout --chrome-options="window-size=1920,1080" --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
+            - name: Upload result
+              uses: actions/upload-artifact@v3
+              with:
+                name: ${{ matrix.name }}
+                path: ${{ matrix.name }}/*.json
+            
+    publish-results:
+        permissions:
+            contents: write
+        runs-on: ubuntu-latest
+        needs: [axe]
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Download results
+              uses: actions/download-artifact@v3
+            - name: Publish new results
+              uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                commit_message: "Publish new results"
