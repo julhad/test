@@ -39,7 +39,7 @@ jobs:
             - name: Create folder
               run: |
                 cd _data
-                mkdir ${{ matrix.name }}
+                mkdir -p ${{ matrix.name }}
             - name: Testing ${{ matrix.name }}
               run: axe --stdout --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
             - name: Upload result
