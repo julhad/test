@@ -39,7 +39,7 @@ jobs:
             - name: Create folder
               run: mkdir ${{ matrix.name }}
             - name: Testing ${{ matrix.name }}
-              run: axe --stdout --chrome-options="window-size=1920,1080" --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
+              run: axe --stdout --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
             - name: Upload result
               uses: actions/upload-artifact@v3
               with:
