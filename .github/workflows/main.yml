@@ -39,12 +39,12 @@ jobs:
             - name: Create folder
               run: mkdir -p _data/${{ matrix.name }}
             - name: Testing ${{ matrix.name }}
-              run: axe --stdout --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > _data/${{ matrix.name }}/$(date +'%Y-%m-%d').json
+              run: axe --stdout --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
             - name: Upload result
               uses: actions/upload-artifact@v3
               with:
                 name: ${{ matrix.name }}
-                path: _data/${{ matrix.name }}/*.json
+                path: ${{ matrix.name }}/*.json
             
     publish-results:
         permissions:
@@ -56,6 +56,8 @@ jobs:
               uses: actions/checkout@v3
             - name: Download results
               uses: actions/download-artifact@v3
+            - name: Generate index files
+              run: ./generate-index.sh
             - name: Publish new results
               uses: stefanzweifel/git-auto-commit-action@v4
               with:
