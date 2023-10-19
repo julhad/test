@@ -40,6 +40,11 @@ jobs:
               run: mkdir -p ${{ matrix.name }}
             - name: Testing ${{ matrix.name }}
               run: axe --stdout --chromedriver-path='/usr/local/bin/chromedriver' ${{ join(matrix.urls, ', ') }} > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
+            - name: Remove unneeded data from axe-result
+              run: |
+                jq 'del(.[].inapplicable)' ${{ matrix.name }}/$(date +'%Y-%m-%d').json > ${{ matrix.name }}/tmp.json
+                jq 'del(.[] | .passes, .incomplete, .violations | .[] | .nodes, .tags)' ${{ matrix.name }}/tmp.json > ${{ matrix.name }}/$(date +'%Y-%m-%d').json
+                rm tmp.json
             - name: Upload result
               uses: actions/upload-artifact@v3
               with:
