@@ -57,7 +57,7 @@ jobs:
             - name: Download results
               uses: actions/download-artifact@v3
             - name: Generate index files
-              run: ./generate-index.sh
+              run: ./index-files.sh
             - name: Publish new results
               uses: stefanzweifel/git-auto-commit-action@v4
               with:
