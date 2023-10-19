@@ -56,9 +56,26 @@ jobs:
               uses: actions/checkout@v3
             - name: Download results
               uses: actions/download-artifact@v3
-            - name: Generate index files
-              run: ./index-files.sh
             - name: Publish new results
               uses: stefanzweifel/git-auto-commit-action@v4
               with:
                 commit_message: "Publish new results"
+
+    deploy:
+      needs: publish-results
+      runs-on: ubuntu-latest
+  
+      permissions:
+        pages: write
+        id-token: write
+  
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+  
+      steps:
+        - name: Generate index files
+          run: ./index-files.sh
+        - name: Deploy
+          id: deployment
+          uses: actions/deploy-pages@v2
