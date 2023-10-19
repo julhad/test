@@ -74,6 +74,8 @@ jobs:
         url: ${{ steps.deployment.outputs.page_url }}
   
       steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
         - name: Generate index files
           run: ./index-files.sh
         - name: Deploy
